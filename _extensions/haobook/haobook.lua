@@ -8,7 +8,7 @@ local function is_typst_book()
          file_state.file ~= nil
 end
 
-return {
+local header_filter = {
   Header = function(el)
     local file_state = quarto.doc.file_metadata()
 
@@ -44,7 +44,7 @@ return {
         -- If this is the synthetic "Appendices" divider heading,
         -- emit a heading for TOC display
         if el.classes:includes("unnumbered") then
-          local language = _G.param and _G.param("language", nil) or nil
+          local language = quarto.doc.language
           local appendicesTitle = (language and language["section-title-appendices"]) or "Appendices"
           local appendicesHeading = pandoc.RawBlock('typst',
             '#heading(level: 1, numbering: none)[' .. appendicesTitle .. ']')
@@ -58,3 +58,10 @@ return {
     return nil
   end
 }
+
+-- Combine with file_metadata_filter so book metadata markers are parsed
+-- during this filter's document traversal (needed for bookItemType, etc.)
+return quarto.utils.combineFilters({
+  quarto.utils.file_metadata_filter(),
+  header_filter
+})
