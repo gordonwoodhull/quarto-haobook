@@ -1,6 +1,16 @@
-#import "@local/haobook:0.1.0": template, part, appendix-style
+#import "@local/haobook:0.1.0": template, part, appendix-style, cover
 
 #let (body-styles, normal-page, img-heading, side-figure) = template(book: true)
+
+// Title page
+$if(title)$
+#cover(
+  title: [$title$],
+$if(by-author)$
+  author: "$for(by-author)$$it.name.literal$$sep$, $endfor$",
+$endif$
+)
+$endif$
 
 #show: body-styles
 
