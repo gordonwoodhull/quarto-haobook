@@ -1,0 +1,7 @@
+[package]
+name = "haobook"
+version = "0.1.0"
+entrypoint = "haobook/lib.typ"
+authors = ["ParaN3xus"]
+license = "MPL-2.0"
+description = "A margin-note-centric book template inspired by kaobook/Tufte"
