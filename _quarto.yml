@@ -29,3 +29,4 @@ crossref:
 format:
   haobook-typst:
     keep-typ: true
+    theorem-appearance: simple
