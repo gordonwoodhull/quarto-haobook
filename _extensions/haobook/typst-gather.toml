@@ -1,0 +1,12 @@
+# typst-gather configuration
+# Run: quarto call typst-gather
+
+destination = "typst/packages"
+
+discover = ["numbering.typ", "typst-show.typ"]
+
+# Local packages (@local namespace) must be configured manually.
+# Found @local imports:
+#   @local/haobook:0.1.0 (in typst-show.typ)
+[local]
+haobook = "/Users/gordon/src/tb-work/templates/haobook"
