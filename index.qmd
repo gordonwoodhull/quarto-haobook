@@ -44,9 +44,9 @@ _quarto:
           - '#bibliography\(\("references\.bib"\)\)'
           - "#part\\[Part I: Getting Started\\]"
           - "#part\\[Part II: Advanced Topics\\]"
-          # Haobook uses appendix-style (no params) + quarto-appendix-state
+          # Haobook uses appendix-style (no params) + appendix-state
           - '#show: appendix-style'
-          - '#quarto-appendix-state\.update\(true\)'
+          - '#appendix-state\.update\(true\)'
           - "<sec-resources>"
           - "#quarto_super\\("
           - "<fig-panel>"
@@ -102,10 +102,10 @@ _quarto:
           - "#ref\\(<eq-newton>, supplement: \\[Equation\\]\\)"
           - "#ref\\(<eq-quadratic>, supplement: \\[Equation\\]\\)"
           - "#ref\\(<eq-pythagorean>, supplement: \\[Equation\\]\\)"
-          - 'math\.equation\(block: true, numbering: quarto-equation-numbering'
+          - 'math\.equation\(block: true, numbering: equation-numbering'
           - 'counter\(math\.equation\)\.update\(0\)'
           - "#import \"@preview/theorion:0\\.4\\.1\": make-frame"
-          - "quarto-simple-theorem-render"
+          - "simple-theorem-render"
           - '#show: show-theorem'
           - 'make-frame\(\s*"theorem"'
           - "<thm-pythagorean>"

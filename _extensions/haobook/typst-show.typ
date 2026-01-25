@@ -18,4 +18,4 @@ $endif$
 // which don't match haobook's built-in numbering (kind:image, kind:table, kind:raw).
 // Apply chapter-based numbering globally to all figures. This overrides haobook's
 // kind-specific numbering (which only covers image/table/raw kinds).
-#set figure(numbering: quarto-figure-numbering)
+#set figure(numbering: figure-numbering)
