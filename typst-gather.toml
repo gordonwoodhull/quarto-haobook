@@ -1,6 +1,7 @@
 # typst-gather configuration
 # Run: quarto call typst-gather
 
+rootdir = "_extensions/haobook"
 destination = "typst/packages"
 
 discover = ["numbering.typ", "typst-show.typ"]
