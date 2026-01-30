@@ -17,7 +17,9 @@ format: haobook-typst
 
 ## Known issues
 
-Although haobook already has Marginalia built-in, and integrates well with [Quarto article layout features](https://quarto.org/docs/authoring/article-layout.html), there are extra references, double-citations, and other glitches. I think these should be solvable entirely through changes to Typst templates and Lua filters in the extension, but if this needs any changes on Quarto core to get right, please [open a discussion on Quarto](https://github.com/orgs/quarto-dev/discussions).
+Although haobook already has Marginalia built-in, and integrates well with [Quarto article layout features](https://quarto.org/docs/authoring/article-layout.html), there are extra references, double-citations, and other glitches. 
+
+I think these should be solvable through changes to Typst templates and Lua filters in the extension, but if this needs any changes on Quarto core to get right, please [open a discussion on Quarto](https://github.com/orgs/quarto-dev/discussions).
 
 ## Requirements
 
